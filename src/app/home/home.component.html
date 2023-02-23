@@ -1,0 +1,9 @@
+<ng-container *transloco="let t">
+  <h1>{{ t('hello') }}</h1>
+  <p>{{ t('some.nested.key') }}</p>
+
+  <p>empty:{{ t('') }}:</p>
+
+  <p>undef:{{ t(undefKey) }}:</p>
+  <p>{{ t('params', { value: 'Transloco' }) }}</p>
+</ng-container>
