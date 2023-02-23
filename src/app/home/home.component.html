@@ -4,6 +4,6 @@
 
   <p>empty:{{ t('') }}:</p>
 
-  <p>undef:{{ t(undefKey) }}:</p>
+  <p>undef:{{ undefKey ? t(undefKey) : 'undefined!' }}:</p>
   <p>{{ t('params', { value: 'Transloco' }) }}</p>
 </ng-container>
